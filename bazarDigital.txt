@@ -1,0 +1,41 @@
+Comencemos a pensar nuestras tablas: 
+
+ESCENARIO 2:
+Los articulos y los empleados:
+-empleados
+    id
+    nombre
+    apellido
+    dni
+    sueldo
+    rol_id
+
+-tabla PV sueldo
+    id
+    empleado_id
+    rol_id
+    antiguedad
+    sueldo
+
+-rol:
+    id
+    nombre (comun, coordinador, empleados de mostrador, repositores)
+
+-productos:
+    id
+    nombre
+    precio
+    descripcion
+    stock
+    uso profesional 
+
+-ventas:
+    fecha
+    usuario_id
+    productos_id
+    medio de pago
+    total
+
+-categorias_productos:
+    id
+    nombre (bazar, juego, jardinería)
