@@ -1,0 +1,66 @@
+Comencemos a pensar nuestras tablas:
+
+ESCENARIO 1:
+TABLAS: 
+-usuarios:
+    id PK
+    nombre  
+    apellido
+    email
+    contraseña
+    categoria_id FK
+
+-categorias:
+    id PK
+    nombre (estudiantes, docentes, editores o administradores)
+
+-tabla PV usuarios_cursos:
+    id PK
+    usuario_id FK
+    curso_id FK
+
+-cursos:
+    id PK
+    titulo
+    descripcion
+    imagen
+    fecha de inicio
+    fecha de finalizacion
+    cupo maximo
+
+-tabla PV cursos_unidades
+    id
+    curso_id
+    unidad_id
+
+-unidades:
+    id PK
+    titulo
+    descripcion
+    fecha de inicio
+    curso_id
+
+
+
+
+El contenido del curso: 
+
+-clases:
+    titulo
+    descripcion
+    fecha de inicio
+    marca de visibilidad
+    unidad_id
+
+-bloques:
+    titulo
+    marca de visibilidad
+    clases_id
+    tipoDeBloque_id
+
+-tipo de bloques:
+    texto
+    video
+    presentacion
+    pdf
+    archivo
